@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzbuzz</title>
+</head>
+<body>
+    {%for number in rangeOfNumbers%}
+    {%if number % 15 == 0%}
+    <p>fizzbuzz</p>
+    {%elif number % 5 == 0%} 
+    <p>buzz</p>
+    {%elif number % 3 == 0%}
+    <p>fizz</p>
+    {%else%}
+    <p>{{number}}</p>
+    {%endif%}
+    {%endfor%}
+    
+</body>
+</html>
